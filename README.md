@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./images/Screenshot 2024-03-29 at 14-14-05 Frontend Mentor Four card feature section.png)
+![Screenshot](./images/Screenshot%202024-03-29%20at%2014-14-05%20Frontend%20Mentor%20Four%20card%20feature%20section.png)
 
 ### Links
 
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://four-card-feature-section-fafel.netlify.app)
 
 ## My process
 
