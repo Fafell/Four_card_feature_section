@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cl-Red: hsl(0, 78%, 62%);
+    --cl-Cyan: hsl(180, 62%, 55%);
+    --cl-Orange: hsl(34, 97%, 64%);
+    --cl-Blue: hsl(212, 86%, 64%);
+
+    --cl-Very_Dark_Blue: hsl(234, 12%, 34%);
+    --cl-Grayish_Blue: hsl(229, 6%, 66%);
+    --cl-Very_Light_Gray: hsl(0, 0%, 98%);
+
+    --fw-tiny: 200;
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+    font-size: 15px;
+
+    --ff-basic: "Poppins", sans-serif;
+}
+
+/*********** main section ***********/
+body {
+    height: 100%;
+    background-color: var(--cl-Very_Light_Gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-basic);
+    color: var(--cl-Grayish_Blue);
+    margin: 2.1rem;
+}
+
+.introduction {
+    margin-bottom: 5rem;
+    text-align: center;
+    max-width: 500px;
+}
+
+.main_content {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/**** introduction section ****/
+h1 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    font-weight: var(--fw-tiny);
+    color: var(--cl-Very_Dark_Blue);
+    margin-bottom: 1rem;
+}
+
+h1 > span {
+    font-weight: var(--fw-bold);
+    display: inline-block;
+}
+
+/**** cart styling ****/
+.card {
+    background-color: white;
+    position: relative;
+    max-width: 350px;
+    border-radius: .3rem;
+    padding: 1.8rem 2.15rem;
+    box-shadow: 0 10px 28px -14px var(--cl-Grayish_Blue);
+}
+
+#card_1 {
+    border-top: .3rem solid var(--cl-Cyan);
+}
+
+#card_2 {
+    border-top: .3rem solid var(--cl-Red);
+}
+
+#card_3 {
+    border-top: .3rem solid var(--cl-Orange);
+}
+
+#card_4 {
+    border-top: .3rem solid var(--cl-Blue);
+}
+
+.card_title {
+    color: var(--cl-Very_Dark_Blue);
+    font-weight: var(--fw-bold);
+    font-size: 1.35rem;
+    margin-bottom: .5rem;
+}
+
+.card_description {
+    font-size: .85rem;
+}
+
+.card_img {
+    margin-top: 2rem;
+    text-align: end;
+}
+
+/*********** query section ***********/
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .main_content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*********** additional section ***********/
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+  }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
